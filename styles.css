@@ -1,13 +1,14 @@
 :root {
-  --background-color: rgb(12, 13, 17);
-  --section-background-color: rgb(240, 248, 255);
+  --body-color: rgb(12, 13, 17);
+  --color-purple: #21142e;
+  --color-blue: #131129;
   --font-color-light: rgb(240, 248, 255);
   --font-color-dark: rgb(12, 13, 17);
   --font-family: 'ZCOOL QingKe HuangYou', cursive, 'Courier New', Courier, monospace;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--body-color);
   font-family: var(--font-family);
   /* Never exceeds the height and width of viewport */
   margin-inline: auto;
@@ -46,11 +47,16 @@ footer {
 }
 
 #content {
-  background-color: var(--section-background-color);
+  background-color: var(--color-blue);
+  color: var(--font-color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
-  color: var(--section-background-color);
+  color: var(--font-color-light);
   font-size: 64px;
   background-color: rgba(12, 13, 17, 0.719);
   position: absolute;
@@ -65,7 +71,10 @@ footer {
 
 
 .logo {
-  height: auto;
   width: 80px;
   padding: 10px;
+}
+
+.form-area{
+  background-color: var(--color-purple)
 }
