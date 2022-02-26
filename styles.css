@@ -4,6 +4,7 @@
   --color-blue: #131129;
   --font-color-light: rgb(240, 248, 255);
   --font-color-dark: rgb(12, 13, 17);
+  --font-color-red: #c01059;
   --font-family: 'ZCOOL QingKe HuangYou', cursive, 'Courier New', Courier, monospace;
 }
 
@@ -19,7 +20,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
 img {
   height: auto;
   max-width: 100%;
@@ -33,6 +33,51 @@ footer {
   text-align: center;
   margin-top: 5px;
   padding: 2.5px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+input {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: var(--font-color-dark);
+  padding: 5px;
+  margin: 5px;
+}
+
+label{
+  margin: 5px;
+}
+
+p>span{
+  font-style: italic;
+  color: var(--font-color-red);
+  padding: 2.55px;
+}
+
+h2{
+  margin-left: 5px;
+  font-size: 32px;
+}
+
+button{
+  margin: auto 10rem;
+  padding: 10px;
+  font-size: 20px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  border: 5px solid var(--font-color-red);
+  border-radius: 5px;
+  color: var(--font-color-red);
+  background-color: transparent;
+  outline: none;
 }
 
 #main {
@@ -53,6 +98,8 @@ footer {
   place-content: center;
   gap: 5%;
   padding: 50px 0;
+  min-width: 50%; /*not responsive for smaller devices */
+
 }
 
 .hero {
@@ -69,7 +116,6 @@ footer {
   align-items: center;
 }
 
-
 .logo {
   width: 80px;
   padding: 10px;
@@ -81,20 +127,8 @@ footer {
   width: auto;
 }
 
-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 10px;
-  row-gap: 10px;
-}
-
-
-input {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border: none;
-  color: var(--font-color-dark);
-  padding: 5px;
-  margin-top: 5px;
+.text-content{
+  font-size: 25px;
+  padding: 20px;
+  margin: 5px;
 }
