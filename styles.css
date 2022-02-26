@@ -1,6 +1,6 @@
 :root {
   --body-color: rgb(12, 13, 17);
-  --color-purple: #21142e;
+  --color-purple: #8b143ed2;
   --color-blue: #131129;
   --font-color-light: rgb(240, 248, 255);
   --font-color-dark: rgb(12, 13, 17);
@@ -49,10 +49,10 @@ footer {
 #content {
   background-color: var(--color-blue);
   color: var(--font-color-light);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
+  gap: 5%;
+  padding:50px 0;
 }
 
 .hero {
@@ -76,5 +76,16 @@ footer {
 }
 
 .form-area{
-  background-color: var(--color-purple)
+  background-color: var(--color-purple);
+  padding: 20px;
+  width: auto;
 }
+
+form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+
