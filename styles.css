@@ -68,7 +68,7 @@ h2{
 }
 
 button{
-  margin: auto 10rem;
+  margin: 2.5rem 10rem;
   padding: 10px;
   font-size: 20px;
   font-family: var(--font-family);
@@ -78,6 +78,12 @@ button{
   color: var(--font-color-red);
   background-color: transparent;
   outline: none;
+}
+
+button:hover{
+  background-color: var(--font-color-red);
+  color: var(--font-color-light);
+  border: 5px solid --font-color-light;
 }
 
 #main {
@@ -96,7 +102,6 @@ button{
   color: var(--font-color-light);
   display: grid;
   place-content: center;
-  gap: 5%;
   padding: 50px 0;
   min-width: 50%; /*not responsive for smaller devices */
 
@@ -131,4 +136,12 @@ button{
   font-size: 25px;
   padding: 20px;
   margin: 5px;
+}
+.account{
+  font-size: 20px;
+  padding-left: 25px;
+}
+.login{
+  padding-left: 5px;
+  color: var(--font-color-red);
 }
