@@ -8,9 +8,16 @@
 
 body {
   background-color: var(--background-color);
-  margin: 0;
   font-family: var(--font-family);
+  /* Never exceeds the height and width of viewport */
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 img {
   height: auto;
@@ -30,7 +37,6 @@ footer {
 #main {
   display: flex;
   height: auto;
-  margin: 20% 20% 10px;
   border-radius: 2.5%;
   overflow: hidden;
 }
