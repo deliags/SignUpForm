@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --body-color: rgb(12, 13, 17);
   --color-purple: #8b143e59;
@@ -43,13 +49,25 @@ form {
 }
 
 input {
+  font-size: 20px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   border: none;
+  border-bottom: inset;
+  border-right: inset;
+  border-color: #b9b8bb;
   color: var(--font-color-dark);
   padding: 5px;
   margin: 5px;
+}
+
+input:focus{
+  color: var(--font-color-light);
+  border-color: #fb161e;
+  outline: 3px solid transparent;
+  background-color: var(--color-blue);
 }
 
 label{
@@ -127,7 +145,7 @@ button:hover{
 }
 
 .form-area {
-  background-color: var(--color-purple);
+  background-color: #2517ea10;
   padding: 20px;
   width: auto;
 }
